@@ -1,59 +1,51 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
 </p>
 
-## About Laravel
+# Jokiin - Platform Jasa & Template Desain (Laravel Based)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Jokiin** adalah platform berbasis web yang dibangun menggunakan framework Laravel. Aplikasi ini dirancang untuk menyediakan layanan penjualan template desain dan jasa kustomisasi visual (seperti kolase foto, desain *story* media sosial, ucapan ulang tahun, dsb) secara cepat dan terjangkau untuk pelajar, mahasiswa, maupun kreator pemula.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Proyek ini terbagi menjadi dua sisi utama: **Landing Page** untuk pelanggan memilih layanan, dan **Dashboard Admin** terintegrasi untuk manajemen produk serta pelacakan pesanan secara *real-time*.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📸 Tampilan Antarmuka (Preview UI)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Disini adalah cuplikan tampilan dari aplikasi Jokiin:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<p align="center">
+    <img src="ss/image.png" width="80%" alt="Tampilan Jokiin">
+    <img src="ss/image2.png" width="80%" alt="Tampilan Jokiin">
+    <img src="ss/image3.png" width="80%" alt="Tampilan Jokiin">
+    <img src="ss/image4.png" width="80%" alt="Tampilan Jokiin">
+    <img src="ss/image5.png" width="80%" alt="Tampilan Jokiin">
+</p>
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Fitur Utama
 
-### Premium Partners
+### 1. Sisi Pelanggan (Front-End)
+* **Katalog Layanan Dinamis:** Menampilkan semua produk/template aktif langsung dari database lengkap dengan nama, gambar, dan harga.
+* **Sistem Pemesanan Mudah:** Tombol pesan yang terhubung langsung untuk mencatat pesanan pelanggan.
+* **Section 'Tentang Kami' & Kontak:** Informasi platform serta integrasi kontak WhatsApp/Email di bagian *footer*.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 2. Sisi Administrator (Admin Panel)
+* **Dashboard Statistik:** Menampilkan total template yang tersedia, jumlah jasa, serta rangkuman status pesanan (*Total Pesanan, Pending, Diproses, Selesai*).
+* **Kelola Template (CRUD):** Form interaktif untuk menambah, melihat, dan mengelola item template baru (Judul, Harga, Kategori, Deskripsi, dan Upload Gambar).
+* **Manajemen Pesanan:** Tabel data pesanan masuk untuk mengubah status transaksi pelanggan (*Batal, Proses, Selesai*) dengan sekali klik.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🛠️ Spesifikasi Teknologi
 
-## Code of Conduct
+* **Framework:** Laravel (PHP)
+* **Database:** MySQL / MariaDB (Eloquent ORM & Migrations)
+* **Front-End:** Blade Templating Engine + Custom CSS / Tailwind CSS
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 📄 Lisensi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Proyek ini dibangun menggunakan open-source software **Laravel framework** di bawah [MIT license](https://opensource.org/licenses/MIT).
