@@ -24,6 +24,35 @@ Disini adalah cuplikan tampilan dari aplikasi Jokiin:
 
 ---
 
+## 🗄️ Struktur Database
+
+Proyek ini menggunakan database MySQL dengan skema tabel utama sebagai berikut:
+
+### 1. Tabel `templates` (Menyimpan Katalog Layanan)
+| Kolom | Tipe Data | Keterangan |
+| --- | --- | --- |
+| `id` | BigInt (Primary Key, Auto Increment) | ID unik setiap template |
+| `judul` | VARCHAR | Nama atau judul template desain |
+| `harga` | INT | Harga template dalam Rupiah |
+| `kategori` | VARCHAR | Kategori produk (contoh: `template`, `jasa`) |
+| `deskripsi` | TEXT (Nullable) | Detail singkat mengenai produk |
+| `gambar` | VARCHAR | Path/nama file gambar yang di-upload ke storage |
+| `created_at` / `updated_at` | Timestamp | Waktu pembuatan & pembaruan data |
+
+### 2. Tabel `orders` (Menyimpan Data Pesanan Masuk)
+| Kolom | Tipe Data | Keterangan |
+| --- | --- | --- |
+| `id` | BigInt (Primary Key, Auto Increment) | ID unik setiap transaksi |
+| `nama` | VARCHAR | Nama pelanggan/pemesan |
+| `kontak` | VARCHAR | Nomor WhatsApp aktif pelanggan |
+| `layanan` | VARCHAR | Nama layanan/template yang dipesan |
+| `harga` | INT | Total harga yang harus dibayar |
+| `catatan` | TEXT (Nullable) | Catatan tambahan dari pelanggan |
+| `status` | VARCHAR | Status pesanan (`Pending`, `Diproses`, `Selesai`, `Batal`) |
+| `created_at` / `updated_at` | Timestamp | Waktu pesanan masuk & perubahan status |
+
+---
+
 ## 🚀 Fitur Utama
 
 ### 1. Sisi Pelanggan (Front-End)
@@ -46,6 +75,11 @@ Disini adalah cuplikan tampilan dari aplikasi Jokiin:
 
 ---
 
-## 📄 Lisensi
+## 📁 Cara Instalasi Proyek di Lokal
 
-Proyek ini dibangun menggunakan open-source software **Laravel framework** di bawah [MIT license](https://opensource.org/licenses/MIT).
+Ikuti langkah-langkah berikut untuk menjalankan proyek Jokiin di komputer kamu:
+
+### 1. Clone Repositori & Masuk ke Direktori
+```bash
+git clone [https://github.com/username/jokiin.git](https://github.com/username/jokiin.git)
+cd jokiin
