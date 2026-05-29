@@ -333,6 +333,12 @@
         <a href="/admin/orders">&nbsp;Pesanan</a>
         <a href="/" target="_blank">&nbsp;Lihat Website</a>
     </div>
+    <div style="padding: 12px;">
+        <form method="POST" action="{{ route('admin.logout') }}">
+            @csrf
+            <button type="submit" style="width:100%;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);border:1.5px solid rgba(255,255,255,0.15);border-radius:10px;padding:10px 14px;font-size:0.88rem;font-weight:600;cursor:pointer;">Logout</button>
+        </form>
+    </div>
 </div>
 
 {{-- Main --}}
@@ -475,3 +481,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
