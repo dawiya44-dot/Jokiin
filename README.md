@@ -34,7 +34,7 @@ Proyek ini menggunakan database MySQL dengan skema tabel utama sebagai berikut:
 | `id` | BigInt (Primary Key, Auto Increment) | ID unik setiap template |
 | `judul` | VARCHAR | Nama atau judul template desain |
 | `harga` | INT | Harga template dalam Rupiah |
-| `kategori` | VARCHAR | Kategori produk (contoh: `template`, `jasa`) |
+| `kategori` | VARCHAR | Kategori produk (contoh: `template`, `jasa`) |1
 | `deskripsi` | TEXT (Nullable) | Detail singkat mengenai produk |
 | `gambar` | VARCHAR | Path/nama file gambar yang di-upload ke storage |
 | `created_at` / `updated_at` | Timestamp | Waktu pembuatan & pembaruan data |
