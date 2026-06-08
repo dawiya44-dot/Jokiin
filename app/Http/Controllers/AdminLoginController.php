@@ -19,9 +19,12 @@ class AdminLoginController extends Controller
         $username = $request->input('username');
         $password = $request->input('password');
 
+        $adminUsername = env('ADMIN_USERNAME', 'admin');
+        $adminPassword = env('ADMIN_PASSWORD', 'rahasia123');
+
         if (
-            $username === env('ADMIN_USERNAME') &&
-            $password === env('ADMIN_PASSWORD')
+            $username === $adminUsername &&
+            $password === $adminPassword
         ) {
             session(['admin_logged_in' => true]);
             return redirect('/admin/templates');

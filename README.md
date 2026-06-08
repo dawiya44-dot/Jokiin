@@ -83,3 +83,63 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek Jokiin di komputer kamu:
 ```bash
 git clone [https://github.com/username/jokiin.git](https://github.com/username/jokiin.git)
 cd jokiin
+
+```
+
+### 2. Install Dependencies
+```bash
+composer install
+```
+
+### 3. Salin File Environment
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+### 4. Konfigurasi Database
+Edit file `.env` dan sesuaikan pengaturan database:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_jokiin
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 5. Jalankan Migrasi
+```bash
+php artisan migrate
+```
+
+### 6. Buat Symbolic Link Storage
+```bash
+php artisan storage:link
+```
+
+### 7. Jalankan Server
+```bash
+php artisan serve
+```
+
+Aplikasi bisa diakses di `http://localhost:8000`
+
+---
+
+## 🔐 Akun Login Admin
+
+Gunakan kredensial berikut untuk masuk ke dashboard admin di `/admin/login`:
+
+| Field    | Value         |
+|----------|---------------|
+| Username | `admin`       |
+| Password | `rahasia123`  |
+
+> Kredensial ini bisa diubah melalui file `.env` dengan menambahkan:
+> ```
+> ADMIN_USERNAME=nama_user_kamu
+> ADMIN_PASSWORD=password_kamu
+> ```
+
+---
